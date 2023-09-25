@@ -1,0 +1,24 @@
+{
+  "name": "bun-express-bench",
+  "type": "module",
+  "scripts": {
+    "dev:bun": "bun --watch src/main.ts",
+    "dev:node": "tsx watch --clear-screen=false src/main.ts",
+    "prisma:push": "prisma db push",
+    "prisma:gen": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.3.1",
+    "express": "^4.18.2",
+    "prisma": "^5.3.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.18",
+    "bun-types": "latest",
+    "prettier": "^3.0.3",
+    "tsx": "^3.13.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
